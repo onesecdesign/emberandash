@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ember & Ash | Where Fire Meets Flavor</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="loading-screen">
+    <div class="matchstick"></div>
+  </div>
+
+  <section id="hero">
+    <video autoplay muted loop id="hero-video">
+      <source src="assets/videos/main.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-content">
+      <h1>Where Fire Meets Flavor</h1>
+      <button onclick="scrollToSection('menu')">Explore the Menu</button>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>Our Story</h2>
+    <div class="timeline">
+      <div class="event">
+        <div class="icon fire-icon"></div>
+        <p>Forged in flame, Ember & Ash is a celebration of contrast—where ancient techniques meet modern vision. Inspired by the raw, elemental power of fire, we reimagine the traditions of open-flame cooking through a contemporary lens. Every dish tells a story of earth, heat, and time, bridging past and present with every charred edge and glowing ember.
+            At the heart of our kitchen is a deep respect for the primal act of cooking over fire. It’s more than a method—it’s a ritual. Wood smoke and searing flames coax bold, honest flavors from the finest ingredients, turning simplicity into something transcendent. Our dishes evoke the rugged beauty of the hearth, tempered by refined execution and creative flair.
+            This is a culinary journey through smoldering textures and bold spices, where smoke becomes a signature note and every plate is a balance of intensity and elegance. At Ember & Ash, we invite you to savor the magic of fire—wild, untamed, and artfully composed.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <div class="menu-filters">
+      <button onclick="filterMenu('all')">All</button>
+      <button onclick="filterMenu('small-flames')">Small Flames</button>
+      <button onclick="filterMenu('main-fire')">Main Fire</button>
+      <button onclick="filterMenu('smoke-sip')">Smoke & Sip</button>
+    </div>
+    <div class="menu-items"></div>
+    <div class="seasonal-carousel"></div>
+  </section>
+
+  <section id="chef">
+    <div class="chef-profile">
+      <img src="assets/images/chef.jpg" alt="Chef Portrait" class="chef-img" />
+      <blockquote class="philosophy">
+        "Fire is our first flavor. We honor it with every dish."<br>
+        Below is our head chef James Smith's signature dishes and cocktails.
+      </blockquote>
+    </div>
+    <div class="gallery">
+      <img src="assets/images/dish-charred-lamb.jpg" alt="Charred Octopus" />
+      <img src="assets/images/cocktail-smoke.jpg" alt="Smoky Cocktail" />
+      <img src="assets/images/ember-dessert.jfif" alt="Ember Dessert" />
+    </div>
+  </section>
+
+  <footer>
+    <div class="contact">
+      <p>Email: hello@emberandash.com</p>
+      <p>Location: 123 Flame Street, Firetown</p>
+    </div>
+    <div class="social">
+      <a href="#" class="icon ember-icon">IG</a>
+      <a href="#" class="icon ember-icon">FB</a>
+      <a href="#" class="icon ember-icon">TW</a>
+    </div>
+    <nav class="footer-nav">
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#chef">Chef</a>
+    </nav>
+  </footer>
+</body>
+</html>
